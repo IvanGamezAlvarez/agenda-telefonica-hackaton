@@ -53,9 +53,11 @@ public class Contacto {
         return Objects.hash(nombre.toLowerCase());
     }
 
-    @Override
-    public String toString() {
-        return "Contacto -> Nombre: " + nombre + " " + apellido + " | Teléfono: " + telefono;
-    }
+	@Override
+	public String toString() {
+		return "Contacto [nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + "]";
+	}
+
+
 
 }

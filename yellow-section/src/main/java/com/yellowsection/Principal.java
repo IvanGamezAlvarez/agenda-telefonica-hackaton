@@ -55,7 +55,7 @@ public class Principal {
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
                     apellido = sc.nextLine();
-                    if (agenda.existeContacto(new Contacto(nombre, apellido, ""))) {
+                    if (agenda.existeContacto(nombre, apellido)) {
                         System.out.println("El contacto existe.");
                     } else {
                         System.out.println("El contacto no existe.");
@@ -76,7 +76,7 @@ public class Principal {
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
                     apellido = sc.nextLine();
-                    agenda.eliminarContacto(nombre, apellido);
+                    agenda.borrarContacto(nombre, apellido);
                     break;
                 case 6:
                     System.out.print("Nombre: ");
@@ -88,7 +88,8 @@ public class Principal {
                     agenda.modificarTelefono(nombre, apellido, nuevoTel);
                     break;
                 case 7:
-                    agenda.espaciosLibres();
+                    int espaciosLibres = agenda.espaciosLibres();
+                    System.out.println("te quedan " + espaciosLibres + "  espacios libres");
                     break;
                 case 8:
                     System.out.println("Saliendo...");
