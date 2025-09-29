@@ -11,18 +11,10 @@ public class Agenda {
 	public Agenda() {
 		this(10);
 	}
-	public boolean existeContacto(Contacto contacto) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }
 
 
 
 class Contacto{
-
-	public Contacto(String nombre, String apellido, String string) {
-		// TODO Auto-generated constructor stub
-	}
 	
 }
