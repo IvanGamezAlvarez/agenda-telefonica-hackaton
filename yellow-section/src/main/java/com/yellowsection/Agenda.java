@@ -1,6 +1,6 @@
 package com.yellowsection;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 public class Agenda {
@@ -22,7 +22,8 @@ public class Agenda {
 		this(10);
 	}
 	
-	public void añadirContacto(String name, String apellido, int telefono) {
+	public void anadirContacto(String name, String apellido, String telefono) {
+		if (this.existeContacto()) return;
 		for (int i = 0; i < listaContactos.length; i++) {
 			if (listaContactos[i] == null) {
 				listaContactos[i] = new Contacto(name, apellido, telefono);
@@ -41,21 +42,24 @@ public class Agenda {
 			}		
 		}	
 		if (espaciosLibres == 0) {
-			//System.out.println("Actualmente no hay espacios libres en tu agenda.");
 			return 0;
 		} else {
-			//System.out.println("Cuentas con:" + espaciosLibres + " espacios libres en tu agenda.");
 			return espaciosLibres;
 		}
 	}
 	
-	public void listarContactos(String name, String apellido, int telefono) {
+	public void listarContactos() {
 		if (espaciosLibres() == listaContactos.length ) {
 			System.out.println("Tu agenda esta vacia");
 			return;
 		}
 		System.out.println("Lista de contactos:");
-		Arrays.sort(listaContactos);
+		Arrays.sort(listaContactos, (a, b) -> {
+	        if (a == null && b == null) return 0;
+	        if (a == null) return 1;
+	        if (b == null) return -1;
+	        return a.getNombre().compareToIgnoreCase(b.getNombre());
+	    });
 		for (int i = 0; i < listaContactos.length; i++) {
 			if (listaContactos[i] != null) {
 				System.out.println(listaContactos[i].getNombre() +" "+ listaContactos[i].getApellido() + " - " + listaContactos[i].numero  );
@@ -63,34 +67,7 @@ public class Agenda {
 		}	
 	}
 
-	
 }
 
 
 
-class Contacto{
-	String nombre;
-	String apellido;
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getApellido() {
-		return apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-
-	int numero;
-	
-	public Contacto(String name, String appellido,int numero) {
-		
-	}
-	
-}
