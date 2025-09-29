@@ -1,0 +1,51 @@
+0:07:44 Tab1 PageLoad
+0:07:51 Tab1 StartNav27 #typed
+0:07:51 Tab1 FinishNav27
+0:07:51 Tab1 PageLoad
+0:08:40 Memory Pressure: Moderate
+0:11:21 Memory Pressure: Moderate
+0:11:31 Memory Pressure: Moderate
+0:11:41 Memory Pressure: Moderate
+0:14:04 Tab1 StartNav28 #typed
+0:14:04 Tab1 FinishNav28
+0:14:04 Tab1 PageLoad
+0:14:08 Tab1 StartNav29 #typed
+0:14:08 Tab1 FinishNav29
+0:14:08 Tab1 PageLoad
+0:14:41 Memory Pressure: Moderate
+0:15:31 Memory Pressure: Moderate
+0:15:41 Memory Pressure: Moderate
+0:16:52 Microsoft.NewBrowser_Popup
+0:16:52 Microsoft.BrowserList.AddBrowser
+0:16:52 Browser3 Insert active Tab3 at 0
+0:16:52 Tab3 StartNav30 #auto_toplevel
+0:16:52 Tab3 StartNav31 #typed
+0:16:53 Tab3 StartNav32 #typed
+0:16:55 Tab3 FinishNav30
+0:16:55 Tab3 PageLoad
+0:16:55 Tab3 FinishNav31
+0:16:55 Tab3 PageLoad
+0:16:55 Tab3 FinishNav32
+0:16:55 Tab3 PageLoad
+0:17:51 Tab3 StartNav33 #typed
+0:17:51 Tab3 FinishNav33
+0:17:51 Tab3 PageLoad
+0:17:52 Tab3 StartNav34 #typed
+0:17:52 Tab3 FinishNav34
+0:17:52 Tab3 PageLoad
+0:17:57 Tab3 StartNav35 #typed
+0:17:57 Tab3 FinishNav35
+0:17:57 Tab3 PageLoad
+0:17:59 Tab3 StartNav36 #typed
+0:17:59 Tab3 FinishNav36
+0:17:59 Tab3 PageLoad
+0:18:00 Tab3 StartNav37 #typed
+0:18:00 Tab3 FinishNav37
+0:18:00 Tab3 PageLoad
+0:18:06 Tab3 StartNav38 #typed
+0:18:06 Tab3 FinishNav38
+0:18:06 Tab3 PageLoad
+0:19:46 Memory Pressure: Moderate
+0:19:56 Memory Pressure: Moderate
+0:20:06 Memory Pressure: Moderate
+0:20:16 Memory Pressure: Moderate

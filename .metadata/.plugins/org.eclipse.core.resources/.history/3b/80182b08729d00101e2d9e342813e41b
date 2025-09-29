@@ -1,0 +1,53 @@
+package com.yellowsection;
+import java.util.Objects;
+
+public class Contactos implements Comparable<Contactos> {
+	
+	private String nombre;
+    private String apellido;
+    private String telefono;
+
+    public Contactos(String nombre, String apellido, String telefono) {
+        if (nombre == null || nombre.trim().isEmpty() || apellido == null || apellido.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre y apellido no pueden estar vacíos.");
+        }
+        this.nombre = nombre.trim();
+        this.apellido = apellido.trim();
+        this.telefono = telefono;
+    }
+    
+ // Getters y setters
+    public String getNombre() { return nombre; }
+    public String getApellido() { return apellido; }
+    public String getTelefono() { return telefono; }
+    public void setTelefono(String telefono) { this.telefono = telefono; }
+
+    // Igualdad por nombre y apellido ignorando mayúsculas
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Contactos)) return false;
+        Contactos c = (Contactos) o;
+        return nombre.equalsIgnoreCase(c.nombre) && apellido.equalsIgnoreCase(c.apellido);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre.toLowerCase(), apellido.toLowerCase());
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " " + apellido + " - " + telefono;
+    }
+
+    // Para ordenar alfabéticamente por nombre y apellido
+    @Override
+    public int compareTo(Contactos otro) {
+        int cmp = this.nombre.compareToIgnoreCase(otro.nombre);
+        if (cmp != 0) return cmp;
+        return this.apellido.compareToIgnoreCase(otro.apellido);
+    }
+	
+
+}

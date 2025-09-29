@@ -1,3 +1,2 @@
-2025/09/29-12:29:11.105 6634 Reusing MANIFEST C:\Users\USER\Desktop\guiaTelefonico\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/09/29-12:29:11.116 6634 Recovering log #3
-2025/09/29-12:29:11.121 6634 Reusing old log C:\Users\USER\Desktop\guiaTelefonico\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/09/29-14:05:00.796 28c8 Creating DB C:\Users\alexm\OneDrive\Documents\Hackaton\agenda-telefonica-hackaton\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/09/29-14:05:02.385 28c8 Reusing MANIFEST C:\Users\alexm\OneDrive\Documents\Hackaton\agenda-telefonica-hackaton\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001

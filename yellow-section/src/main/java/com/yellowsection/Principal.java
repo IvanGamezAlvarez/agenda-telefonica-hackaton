@@ -45,7 +45,7 @@ public class Principal {
                     System.out.print("Teléfono: ");
                     String telefono = sc.nextLine();
                     try {
-      //                  agenda.anadirContacto(new Contacto(nombre, apellido, telefono));
+      //                  Agenda.anadirContacto(new Contacto(nombre, apellido, telefono));
                     } catch (IllegalArgumentException e) {
                         System.out.println(e.getMessage());
                     }
@@ -62,21 +62,21 @@ public class Principal {
                     }
                     break;
                 case 3:
-        //            agenda.listarContactos();
+        //            Agenda.listarContactos();
                     break;
                 case 4:
                     System.out.print("Nombre: ");
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
                     apellido = sc.nextLine();
-       //             agenda.buscaContacto(nombre, apellido);
+       //             Agenda.buscaContacto(nombre, apellido);
                     break;
                 case 5:
                     System.out.print("Nombre: ");
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
                     apellido = sc.nextLine();
-      //              agenda.eliminarContacto(nombre, apellido);
+      //              Agenda.eliminarContacto(nombre, apellido);
                     break;
                 case 6:
                     System.out.print("Nombre: ");
@@ -85,10 +85,10 @@ public class Principal {
                     apellido = sc.nextLine();
                     System.out.print("Nuevo Teléfono: ");
                     String nuevoTel = sc.nextLine();
-       //             agenda.modificarTelefono(nombre, apellido, nuevoTel);
+       //             Agenda.modificarTelefono(nombre, apellido, nuevoTel);
                     break;
                 case 7:
-      //              agenda.espaciosLibres();
+      //             Agenda.espaciosLibres();
                     break;
                 case 8:
                     System.out.println("Saliendo...");
